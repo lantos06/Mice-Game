@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mice2 </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\lantos\Desktop\mice2/node_modules/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="name">mice</div>
+
+            
+        
+
+        </header>
+        	
+        <div id="player1" onclick = "myFunction1()">player 1</div >
+        <div id="player2" onclick = "myFunction2()">player 2</div>
+
+
+        <div class="beans">
+            <btn class="beli1" id="be0a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" class="b1" alt=""> 
+            </btn>    
+            <btn class="beli1" id="be25a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" class="b1" alt=""> 
+            </btn> 
+            <btn class="beli1" id="be26a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" class="b1" alt=""> 
+            </btn>
+            <btn class="beli1" id="be27a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" class="b1" alt=""> 
+            </btn>
+            <btn class="beli1" id="be28a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" class="b1" alt=""> 
+            </btn>
+            <btn class="beli1" id="be29a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" class="b1" alt=""> 
+            </btn>
+            <btn class="beli1" id="be30a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" class="b1" alt=""> 
+            </btn>
+            <btn class="beli1" id="be31a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" class="b1" alt=""> 
+            </btn>
+            <btn class="beli1" id="be32a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" class="b1" alt=""> 
+            </btn>         
+               <p id="rezultat1" class="display-result1">0</p>            
+        </div>
+
+
+        <div class="korn">
+            <btn class="crni" id="ce0a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" class="c1" alt="">
+            </btn>
+            <btn class="crni" id="ce25a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" class="c1" alt="">
+            </btn>
+            <btn class="crni" id="ce26a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" class="c1" alt="">
+            </btn>
+            <btn class="crni" id="ce27a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" class="c1" alt="">
+            </btn>
+            <btn class="crni" id="ce28a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" class="c1" alt="">
+            </btn>
+            <btn class="crni" id="ce29a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" class="c1" alt="">
+            </btn>
+            <btn class="crni" id="ce30a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" class="c1" alt="">
+            </btn>
+            <btn class="crni" id="ce31a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" class="c1" alt="">
+            </btn>
+            <btn class="crni" id="ce32a">
+                <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" class="c1" alt="">
+            </btn>
+
+            <div id="rezultat2" class="display-result2">0</div>
+        </div>
+
+        <div class="krug1">
+            <div class="linija1"></div>
+            <div class="linija2"></div>
+            <div class="linija3"></div>
+            <div class="linija4"></div>
+            <div id="line1"></div>
+            <div class="linija13"></div>
+            <div id="line2"></div>	
+            <div class="linija14"></div>
+            <div id="line3"></div>	
+            <div class="linija15"></div>
+            <div id="line4"></div>	
+            <div class="linija16"></div>
+
+
+            <div class="punkt" id="tacka1a">
+                <div id="be1a" class="beli1a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b1" alt="">
+                    <!-- <p style="color: black">b1a</p> -->
+                </div>
+                <div id="ce1a" class="crni1a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c1" alt="">
+                </div>
+            </div>
+
+
+            <div class="punkt" id="tacka2a">
+                <div id="be2a" class="beli2a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b2" alt="">
+                    <!-- <p style="color: black">b2a</p> -->
+                </div>
+                <div id="ce2a" class="crni2a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c2" alt="">
+
+                </div>
+            </div>
+            <div class="punkt" id="tacka3a">
+                <div id="be3a" class="beli3a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b3" alt="">
+                </div>
+                <div id="ce3a"class="crni3a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c3" alt="">
+
+                </div>
+            </div>
+            <div class="punkt" id="tacka4a">
+                <div id="be4a" class="beli4a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b4" alt="">
+                </div>
+                <div id="ce4a"class="crni4a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c4" alt="">
+
+                </div>
+            </div>
+            <div class="punkt" id="tacka5a">
+                <div id="be5a" class="beli5a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b5" alt="">
+                </div>
+                <div id="ce5a"class="crni5a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c5" alt="">
+
+                </div>
+            </div>
+            <div class="punkt" id="tacka6a">
+                <div id="be6a" class="beli6a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b6" alt="">
+                </div>
+                <div id="ce6a"class="crni6a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c6" alt="">
+
+                </div>
+            </div>
+            <div class="punkt" id="tacka7a">
+                <div id="be7a" class="beli7a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b7" alt="">
+                </div>
+                <div id="ce7a"class="crni7a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c7" alt="">
+
+                </div>
+            </div>
+            <div class="punkt" id="tacka8a">
+                <div id="be8a" class="beli8a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b8" alt="">
+                </div>
+                <div id="ce8a"class="crni8a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c8" alt="">
+
+                </div>
+            </div>
+
+            <div class="krug2">
+                <div class="linija5"></div>
+                <div class="linija6"></div>
+                <div class="linija7"></div>
+                <div class="linija8"></div>
+                <div class="punkt" id="tacka9a">
+                	<div id="be9a"class="beli9a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b9" alt="">
+                </div>
+                <div id="ce9a" class="crni9a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c9" alt="">
+
+                </div>
+                </div>
+                <div class="punkt" id="tacka10a">
+                	<div id="be10a"class="beli10a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b10" alt="">
+                </div>
+                <div id="ce10a"class="crni10a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c10" alt="">
+
+                </div>
+                </div>
+                <div class="punkt" id="tacka11a">
+                	<div id="be11a"class="beli11a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b11" alt="">
+                </div>
+                <div id="ce11a"class="crni11a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c11" alt="">
+
+                </div>
+                </div>
+                <div class="punkt" id="tacka12a">
+                	<div id="be12a"class="beli12a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b12" alt="">
+                </div>
+                <div id="ce12a"class="crni12a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c12" alt="">
+
+                </div>
+                </div>
+                <div class="punkt" id="tacka13a">
+                	<div id="be13a"class="beli13a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b13" alt="">
+                </div>
+                <div id="ce13a"class="crni13a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c13" alt="">
+
+                </div>
+                </div>
+                <div class="punkt" id="tacka14a">
+                	<div id="be14a"class="beli14a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b14" alt="">
+                </div>
+                <div id="ce14a"class="crni14a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c14" alt="">
+
+                </div>
+                </div>
+                <div class="punkt" id="tacka15a">
+                	<div id="be15a"class="beli15a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b15" alt="">
+                </div>
+                <div id="ce15a"class="crni15a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c15" alt="">
+
+                </div>
+                </div>
+                <div class="punkt" id="tacka16a">
+                	<div id="be16a"class="beli16a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b16" alt="">
+                </div>
+                <div id="ce16a"class="crni16a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c16" alt="">
+
+                </div>
+                </div>
+
+                <div class="krug3">
+                    <div class="linija9"></div>
+                    <div class="linija10"></div>
+                    <div class="linija11"></div>
+                    <div class="linija12"></div>
+                    <div class="punkt" id="tacka17a">
+                    	<div id="be17a"class="beli17a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b17" alt="">
+                </div>
+                <div id="ce17a"class="crni17a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c17" alt="">
+
+                </div>
+                    </div>
+                    <div class="punkt" id="tacka18a">
+                    	<div id="be18a"class="beli18a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b18" alt="">
+                </div>
+                <div id="ce18a"class="crni18a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c18" alt="">
+
+                </div>
+                    </div>
+                    <div class="punkt" id="tacka19a">
+                    	<div id="be19a"class="beli19a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b19" alt="">
+                </div>
+                <div id="ce19a"class="crni19a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c19" alt="">
+
+                </div>
+                    </div>
+                    <div class="punkt" id="tacka20a">
+                    	<div id="be20a"class="beli20a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b20" alt="">
+                </div>
+                <div id="ce20a"class="crni20a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c20" alt="">
+
+                </div>
+                    </div>
+                    <div class="punkt" id="tacka21a">
+                    	<div id="be21a"class="beli21a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b21" alt="">
+                </div>
+                <div id="ce21a"class="crni21a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c21" alt="">
+
+                </div>
+                    </div>
+                    <div class="punkt" id="tacka22a">
+                    	<div id="be22a"class="beli22a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b22" alt="">
+                </div>
+                <div id="ce22a"class="crni22a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c22" alt="">
+
+                </div>
+                    </div>
+                    <div class="punkt" id="tacka23a">
+                    	<div id="be23a"class="beli23a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b23" alt="">
+                </div>
+                <div id="ce23a"class="crni23a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c23" alt="">
+
+                </div>
+                    </div>
+                    <div class="punkt" id="tacka24a">
+                    	<div id="be24a"class="beli24a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/beli.png" style="display: none" class="b24" alt="">
+                </div>
+                <div id="ce24a"class="crni24a">
+                    <img src="C:\Users\lantos\Desktop\Mice 1/crni.png" style="display: none" class="c24" alt="">
+
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="C:\Users\lantos\Desktop\mice2/index.js" ></script>
+    <script src="C:\Users\lantos\Desktop\mice2/node_modules/mice_node.js" ></script>
+</body>
+
+</html>
