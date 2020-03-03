@@ -1,0 +1,959 @@
+html.body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 650px;
+    background-color: dodgerblue;
+    position: relative;
+    border: 5px solid blue;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+#heighscore {
+  width: 20%;
+    height: 40px;
+    position: absolute;
+   padding-left: 45%;
+    font-size: 150%;
+    color: white;
+    top: 0px;
+    
+    font-family: AR DELANEY;
+    text-align: center;
+}
+
+.name {
+    width: 20%;
+    height: 40px;
+    position: absolute;
+    float: left;
+    font-size: 150%;
+    color: white;
+    top: 0px;
+    left: 5%;
+    font-family: AR DELANEY;
+
+}
+.dropbtn {
+text-align: center;
+background-color: blue;
+position:relative;
+color: white;
+top: 0;
+left: 50%; 
+display: inline-block;
+}
+
+.dropdown {
+ width: 40%;
+    height: 40px;
+    
+    font-size: 150%;
+    color:white;
+    background-color: blue;
+    top: 0px;
+    left: 20%;
+    font-family: AR DELANEY;
+  cursor: pointer;
+  position:relative;  
+ 
+  display: inline-block;
+}
+.dropdown-content {
+  height: 60px;
+  display: none;
+  position: absolute;
+ top: 40px;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba();
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 2px 8px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown-content a:hover {background-color:yellow}
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+.level1,.level2,.level3 {
+    width: 20%;
+    height: 40px;
+    position: absolute;
+    float: left;
+    font-size: 150%;
+    color: white;
+    top: 0px;
+    left: 50%;
+    font-family: AR DELANEY;
+}
+#player1 {
+    width: 20%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    top: 55px;
+    position: absolute;
+    left: 15%;
+    font-size: 150%;
+    font-family: AR DELANEY;
+    background-color: dodgerblue;
+}
+
+#player2 {
+    width: 20%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    top: 55px;
+    position: absolute;
+    left: 65%;
+    font-size: 150%;
+    font-family: AR DELANEY;
+}
+
+.beans {
+    width: 20%;
+    height: 40px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    position: absolute;
+    top: 90px;
+    left: 15%;
+}
+
+.beli {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: image('beli.png');
+    position: absolute;
+    border: 1px solid white;
+    left: 10px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.display-result1 {
+    width: 20%;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    line-height: 40px;
+    right: 0;
+}
+
+.korn {
+    width: 20%;
+    height: 40px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    position: absolute;
+    top: 90px;
+    left: 65%;
+}
+
+.crni {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: image('crni.png');
+    position: absolute;
+    border: 1px solid black;
+    left: 10px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.display-result2 {
+    width: 20%;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    line-height: 40px;
+    right: 0;
+}
+
+
+#line1 {
+    top: 0;
+    height: 102px;
+    position: relative;
+
+    left: 50.75%;
+    background-color: black;
+    width: 2px;
+    text-align: center;
+
+}
+
+.linija13 {
+    top: -102px;
+    height: 102px;
+    position: relative;
+    left: 50.75%;
+     width: 2px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   border:2px solid red; 
+   display: none;
+}
+
+#line2 {
+    width: 2px;
+    height: 95px;
+    background-color: black;
+    left: 50.75%;
+    position: absolute;
+    bottom: 0;
+}
+
+.linija14 {
+    width: 2px;
+    height: 95px;
+    border:2px solid red;
+    left: 50.75%;
+    position: absolute;
+    bottom: 0;
+    display: none;
+
+}
+
+#line3 {
+    width: 15.5%;
+    height: 2px;
+    background-color: black;
+    top: 235px;
+    position: absolute;
+    left: 0;
+}
+
+.linija15 {
+    width: 15.5%;
+    height: 2px;
+    border:2px solid red;
+    top: 235px;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+#line4 {
+    width: 15.5%;
+    height: 2px;
+    background-color: black;
+    top: 235px;
+    position: absolute;
+    right: 0;
+}
+
+.linija16 {
+    width: 15.5%;
+    height: 2px;
+   border:2px solid red;
+    top: 235px;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.krug1 {
+    width: 90%;
+    height: 70%;
+    border: 2px solid black;
+    top: 150px;
+    left: 5%;
+    line-height: 70%;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+
+.linija1 {
+    width: 100%;
+    border: 2px solid red;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+   }
+.linija2 {
+    width: 100%;
+    border: 2px solid red;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display:none; 
+}
+
+.linija3 {
+    width: 0;
+    height: 100%;
+    border: 2px solid red;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+ }  
+.linija4 {
+    width: 0;
+    height: 100%;
+    border: 2px solid red;
+    left: 100%;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+ }  
+
+.krug2 {
+    width: 85%;
+    height: 79%;
+    border: 2px solid black;
+    top: 48px;
+    left: 7.5%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.linija5 {
+    width: 100%;
+    border: 2px solid red;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none; 
+}
+.linija6 {
+    width: 100%;
+    border: 2px solid red;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none; 
+}
+
+.linija7 {
+    width: 0;
+    height: 100%;
+    border: 2px solid red;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+ }  
+.linija8 {
+    width: 0;
+    height: 100%;
+    border: 2px solid red;
+    left: 100%;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+ }  
+.krug3 {
+    width: 82%;
+    height: 72%;
+    border: 2px solid black;
+    top: 50px;
+    left: 9%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.linija9 {
+    width: 100%;
+    border: 2px solid red;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none; 
+}
+.linija10 {
+    width: 100%;
+    border: 2px solid red;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none; 
+}
+
+.linija11 {
+    width: 0;
+    height: 100%;
+    border: 2px solid red;
+    left: 0;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+ }  
+.linija12 {
+    width: 0;
+    height: 100%;
+    border: 2px solid red;
+    left: 100%;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+ }
+ 
+
+#tacka1a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+
+}
+.beli1a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+
+}
+
+#be0a {
+  position: absolute;
+  z-index: 9;
+}
+
+#ce0a {
+  position: absolute;
+  z-index: 9;
+}
+
+#be25a {
+  position: absolute;
+  z-index: 9;
+}
+
+#ce25a {
+  position: absolute;
+  z-index: 9;
+}
+#be26a {
+  position: absolute;
+  z-index: 9;
+}
+
+#ce26a {
+  position: absolute;
+  z-index: 9;
+}
+#be27a {
+  position: absolute;
+  z-index: 9;
+}
+
+#ce27a {
+  position: absolute;
+  z-index: 9;
+}
+#be28a {
+  position: absolute;
+  z-index: 9;
+}
+
+#ce28a {
+  position: absolute;
+  z-index: 9;
+}
+#be29a {
+  position: absolute;
+  z-index: 9;
+}
+
+#ce29a {
+  position: absolute;
+  z-index: 9;
+}
+#be30a {
+  position: absolute;
+  z-index: 9;
+}
+
+#ce30a {
+  position: absolute;
+  z-index: 9;
+}
+#be31a {
+  position: absolute;
+  z-index: 9;
+}
+
+#ce31a {
+  position: absolute;
+  z-index: 9;
+}
+#be32a {
+  position: absolute;
+  z-index: 9;
+}
+
+#ce32a {
+  position: absolute;
+  z-index: 9;
+}
+
+#be1a {
+  position: absolute;
+  z-index: 9;
+}
+#ce1a {
+  position: absolute;
+  z-index: 9;
+}
+
+
+#tacka2a {
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 50%;
+    top: -18px;
+    position: absolute;
+    left: 49.4%;
+    cursor: pointer;
+
+
+}
+
+#be2a {
+  position: absolute;
+  z-index: 9;
+ }
+#ce2a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka3a {
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 50%;
+    top: -15px;
+    position: absolute;
+    right: -8px;
+    cursor: pointer;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-delay: 5s;
+
+}
+
+#be3a {
+  position: absolute;
+  z-index: 9;
+ }
+#ce3a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka4a {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    top: 50%;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+}
+#be4a {
+  position: absolute;
+  z-index: 9;
+ }
+#ce4a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka5a {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    top: 50%;
+    position: absolute;
+    right: -10px;
+    cursor: pointer;
+}
+#be5a {
+  position: absolute;
+  z-index: 9;
+ }
+#ce5a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka6a {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    bottom: -10px;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+}
+#be6a {
+  position: absolute;
+  z-index: 9;
+ }
+#ce6a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka7a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    bottom: -10px;
+    cursor: pointer;
+}
+#be7a {
+  position: absolute;
+  z-index: 9;
+ }
+#ce7a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka8a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: -10px;
+    position: absolute;
+    bottom: -10px;
+    cursor: pointer;
+}
+#be8a {
+  position: absolute;
+  z-index: 9;
+ }
+#ce8a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka9a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+}
+#be9a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce9a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka10a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+}
+#be10a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce10a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka11a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    position: absolute;
+    right: -10px;
+    cursor: pointer;
+}
+#be11a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce11a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka12a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+}
+#be12a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce12a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka13a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    position: absolute;
+    right: -10px;
+    cursor: pointer;
+}
+#be13a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce13a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka14a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: -10px;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+}
+#be14a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce14a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka15a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    bottom: -10px;
+    cursor: pointer;
+}
+#be15a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce15a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka16a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: -10px;
+    position: absolute;
+    bottom: -10px;
+    cursor: pointer;
+}
+#be16a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce16a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka17a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+}
+#be17a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce17a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka18a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+}
+#be18a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce18a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka19a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+    position: absolute;
+    right: -10px;
+    cursor: pointer;
+}
+#be19a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce19a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka20a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+}
+#be20a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce20a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka21a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    position: absolute;
+    right: -10px;
+    cursor: pointer;
+}
+#be21a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce21a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka22a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: -10px;
+    position: absolute;
+    left: -10px;
+    cursor: pointer;
+}
+#be22a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce22a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka23a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    bottom: -10px;
+    cursor: pointer;
+}
+#be23a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce23a {
+  position: absolute;
+  z-index: 9;
+}
+#tacka24a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: -10px;
+    position: absolute;
+    bottom: -10px;
+    cursor: pointer;
+}
+#be24a {
+  position: absolute;
+  z-index: 9;
+ }
+ #ce24a {
+  position: absolute;
+  z-index: 9;
+}
+.punkt {}
+
